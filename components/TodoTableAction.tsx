@@ -2,7 +2,7 @@
 
 
 
-import { Pen, Trash } from "lucide-react";
+import { Trash } from "lucide-react";
 import { Button } from "./ui/button";
 import Spinner from "./Spinner";
 import { deleteTodoAction } from "@/actions/todo.actions";

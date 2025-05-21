@@ -9,13 +9,9 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { Button } from "./ui/button";
-import { Pen, Trash } from "lucide-react";
 import { ITodos } from "@/interface";
 import { Badge } from "./ui/badge";
-import { deleteTodoAction } from "@/actions/todo.actions";
-import { useState } from "react";
-import Spinner from "./Spinner";
+
 import TodoTableAction from "./TodoTableAction";
 
 
