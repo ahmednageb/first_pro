@@ -6,12 +6,13 @@ const prisma = new PrismaClient();
 
 async function main() {
 
-  await prisma.todo.createMany({
-    data: Array.from({length:20},()=>({
-       title:faker.lorem.words({min:2, max:5}),
-       body:faker.lorem.words({min:1, max:10}),
-    }))
-  })
+  // await prisma.todo.createMany({
+  //   data: Array.from({length:20},()=>({
+  //      title:faker.lorem.words({min:2, max:5}),
+  //      body:faker.lorem.words({min:1, max:10}),
+  //      user
+  //   }))
+  // })
 
   // await prisma.user.createMany({
   //    data: Array.from({ length: 25 }, () => ({

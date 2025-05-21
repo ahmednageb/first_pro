@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Pen, Plus } from "lucide-react";
 import {
@@ -13,8 +13,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { createTodoAction, getTodoListAction, updateTodoAction } from "@/actions/todo.actions";
+import { updateTodoAction } from "@/actions/todo.actions";
 import {
   Form,
   FormControl,
@@ -28,7 +27,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { todoFormSchema, todoFormValues } from "@/schema";
 import { useFieldArray, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { title } from "process";
 import { Checkbox } from "./ui/checkbox";
 import Spinner from "./Spinner";
 import { ITodos } from "@/interface";

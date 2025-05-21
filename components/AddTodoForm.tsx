@@ -51,7 +51,7 @@ const AddTodoForm = ({userId}:{userId:string|null}) => {
     await createTodoAction({
       title,
       body,
-      completed,
+      completed: completed as boolean,
       userId:userId as string,
     });
     setLoading(false);
